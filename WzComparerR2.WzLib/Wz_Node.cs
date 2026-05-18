@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Xml;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Xml;
 
 namespace WzComparerR2.WzLib
 {
@@ -24,6 +24,7 @@ namespace WzComparerR2.WzLib
         //fields
         private object value;
         private string text;
+        private bool property;
         private WzNodeCollection nodes;
         private Wz_Node parentNode;
 
@@ -38,6 +39,11 @@ namespace WzComparerR2.WzLib
         {
             get { return this.text; }
             set { this.text = value; }
+        }
+
+        public bool IsProperty {
+            get { return property; }
+            set { this.property = value; }
         }
 
         public string FullPath

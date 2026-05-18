@@ -244,6 +244,7 @@ namespace WzComparerR2.WzLib
             switch (tag)
             {
                 case "Property":
+                    parent.IsProperty = true;
                     reader.SkipBytes(2);
                     entries = reader.ReadCompressedInt32();
                     for (int i = 0; i < entries; i++)

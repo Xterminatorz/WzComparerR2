@@ -96,7 +96,7 @@ namespace WzComparerR2.WzLib
                             list_file.Position++;
                         }
                         list_file.Position += 2;
-                        folder.Replace(".im/", ".img");
+                        folder = folder.Replace(".im/", ".img");
                         this.List.Add(folder);
                         folder = "";
                     }

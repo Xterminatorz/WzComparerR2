@@ -224,9 +224,9 @@ namespace WzComparerR2.WzLib
             }
         }
 
-        public void LoadKMST1125DataWz(string fileName)
+        public void LoadKMST1125DataWz(string fileName, bool useBaseWz = false)
         {
-            this.LoadWzFolder(Path.GetDirectoryName(fileName), ref this.WzNode, true);
+            this.LoadWzFolder(Path.GetDirectoryName(fileName), ref this.WzNode, useBaseWz);
             calculate_img_count();
         }
 
