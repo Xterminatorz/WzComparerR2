@@ -127,6 +127,7 @@ namespace WzComparerR2.WzLib
         {
             switch (this.SoundType)
             {
+                case Wz_SoundType.Binary:
                 case Wz_SoundType.Mp3:
                     {
                         byte[] data = new byte[this.dataLength];
